@@ -1,0 +1,41 @@
+public class TicketMachine {
+    public static void main(String[] args){}
+    private int price;
+    private int balance;
+    private int total;
+
+public TicketMachine(int ticketCost){
+    price = ticketCost;
+      balance =0;
+
+}
+
+public int getPrice() {
+        return price;
+    }
+
+    public int getBalance() {
+        return balance;
+    }
+
+    public  void  insertMoney(int amount){
+
+        balance = balance + amount;
+    }
+
+public void  printTicket(){
+    //simulate the printing of the ticket.
+
+    System.out.println("######");
+    System.out.println(" the BlueJ line");
+    System.out.println("ticket");
+    System.out.println("#"+price+" cents");
+    System.out.println("########");
+    System.out.println();
+    //total collected with balance
+    total =total+ balance;
+    //clear the balance
+    balance =0;
+
+    }
+}
